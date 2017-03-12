@@ -3,9 +3,9 @@ defmodule Nerves.Neopixel.Mixfile do
 
   def project do
    [app: :nerves_neopixel,
-    version: "0.3.0",
+    version: "0.3.1",
     description: "Drive WS2812B \"NeoPixel\" RGB LED strips from a Raspberry Pi using Elixir.",
-    elixir: "~> 1.3",
+    elixir: "~> 1.4",
     make_clean: ["clean"],
     compilers: [:elixir_make | Mix.compilers],
     build_embedded: Mix.env == :prod,
@@ -19,7 +19,7 @@ defmodule Nerves.Neopixel.Mixfile do
   end
 
   defp deps do
-    [{:elixir_make, "~> 0.3.0"}]
+    [{:elixir_make, "~> 0.4.0"}]
   end
 
   defp package do
